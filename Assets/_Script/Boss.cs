@@ -3,22 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemigo : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     public GameObject objetivo;
     public int vida = 100;
 
     public Animator Anim;
-
-    private void OnEnable()
-    {
-        objetivo = GameObject.Find("Objetivo");
-    }
-
-    private void OnDisable()
-    {
-
-    }
 
     private void Start()
     {
@@ -43,7 +33,7 @@ public class Enemigo : MonoBehaviour
 
     public void Danar()
     {
-        objetivo?.GetComponent<Objetivo>().RecibirDano(5);
+        objetivo?.GetComponent<Objetivo>().RecibirDano(25);
     }
 
     public void RecibirDano(int dano = 5)

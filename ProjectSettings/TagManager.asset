@@ -9,6 +9,10 @@ TagManager:
   - Enemigo01
   - Torre1
   - Suelo
+  - Plataforma
+  - Enemigo02
+  - Enemigo03
+  - Boss
   layers:
   - Default
   - TransparentFX
