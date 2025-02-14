@@ -10,11 +10,13 @@ public class Objetivo : MonoBehaviour,IAtacable
     public delegate void ObjetivoDestruido();
     public event ObjetivoDestruido EnObjetivoDestruido;
 
+
     // Update is called once per frame
     void Update()
     {
         if (vida <= 0)
         {
+
             if (EnObjetivoDestruido != null)
             {
                 EnObjetivoDestruido();

@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< Updated upstream
   tags: []
+=======
+  tags:
+  - Objetivo
+  - Camino
+  - Suelo
+  - Plataforma
+  - Boss
+  - Enemigo
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -14,7 +24,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Proyectil
   - 
   - 
   - 
