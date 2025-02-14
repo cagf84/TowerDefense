@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Objetivo
-  - Camino
-  - Enemigo01
-  - Torre1
-  - Suelo
+  tags: []
   layers:
   - Default
   - TransparentFX
