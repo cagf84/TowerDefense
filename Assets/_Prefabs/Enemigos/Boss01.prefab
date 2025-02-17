@@ -81,6 +81,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1916095372620698348}
   m_SourcePrefab: {fileID: 100100000, guid: 33d980da5cebc5f4da4c5fac4de0ce48, type: 3}
+--- !u!95 &2837924452227873242 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 33d980da5cebc5f4da4c5fac4de0ce48, type: 3}
+  m_PrefabInstance: {fileID: 8505260003814229067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8847789004245072154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 33d980da5cebc5f4da4c5fac4de0ce48, type: 3}
@@ -165,9 +170,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8847789004245072154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 527e3f9ff23425f4e9bb1d1b2edb89e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f1a6f389abffe6428e5ab0629a03800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objetivo: {fileID: 0}
-  vida: 1000
-  Anim: {fileID: 0}
+  vida: 500
+  _dano: 5
+  recursosGanados: 200
+  referenciaAdminJuego: {fileID: 0}
+  referenciaSpawner: {fileID: 0}
+  Anim: {fileID: 2837924452227873242}

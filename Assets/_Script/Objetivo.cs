@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Objetivo : MonoBehaviour
+public class Objetivo : MonoBehaviour, IAtacable
 {
 
     public int vida = 100;
 
     public delegate void ObjetivoDestruido();
     public event ObjetivoDestruido EnObjetivoDestruido;
+    // Start is called before the first frame update
+    void Start()
+    {
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,7 +23,7 @@ public class Objetivo : MonoBehaviour
             {
                 EnObjetivoDestruido();
             }
-            Destroy(this.gameObject,0.2f);
+            Destroy(this.gameObject, 0.2f);
         }
     }
 
@@ -27,4 +31,6 @@ public class Objetivo : MonoBehaviour
     {
         vida -= dano;
     }
+
+
 }

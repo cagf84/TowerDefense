@@ -16,6 +16,7 @@ public class AdministradorToques : MonoBehaviour
     public delegate void PlataformaTocada(GameObject plataforma);
     public event PlataformaTocada EnPlataformaTocada;
 
+
     private void OnEnable()
     {
         TouchSimulation.Enable();
@@ -24,8 +25,6 @@ public class AdministradorToques : MonoBehaviour
         posicionToque = inputs.FindAction("PosicionToque");
         toque.performed += Toque;
     }
-
-
     private void OnDisable()
     {
         inputs.Disable();
@@ -37,7 +36,7 @@ public class AdministradorToques : MonoBehaviour
     {
         mainCam = Camera.main;
     }
-    
+
     private void Toque(InputAction.CallbackContext obj)
     {
         Vector2 poseToque2D = posicionToque.ReadValue<Vector2>();
@@ -46,7 +45,7 @@ public class AdministradorToques : MonoBehaviour
         Debug.Log($"la pantalla fue tocada en la posicion: {poseToque2D}");
         RaycastHit hit;
         if (Physics.Raycast(rayoPantalla, out hit, Mathf.Infinity))
-        { 
+        {
             Debug.Log(hit.transform.gameObject.name);
             if (hit.transform.gameObject.tag == "Plataforma")
             {

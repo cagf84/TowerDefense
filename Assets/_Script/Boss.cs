@@ -2,42 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-public class Boss : MonoBehaviour
+public class Boss : EnemigoBase
 {
-    public GameObject objetivo;
-    public int vida = 100;
 
-    public Animator Anim;
-
-    private void Start()
+    private void Awake()
     {
-        GetComponent<NavMeshAgent>().SetDestination(objetivo.transform.position);
-        Anim = GetComponent<Animator>();
-        Anim.SetBool("IsMoving", true);
+        vida = 300;
+        _dano = 80;
     }
-
-    private void Update()
+    public override void OnDestroy()
     {
-
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Objetivo")
-        {
-            Anim.SetBool("IsMoving", false);
-            Anim.SetTrigger("OnObjetiveReached");
-        }
-    }
-
-    public void Danar()
-    {
-        objetivo?.GetComponent<Objetivo>().RecibirDano(25);
-    }
-
-    public void RecibirDano(int dano = 5)
-    {
-
+        base.OnDestroy();
+        referenciaAdminJuego.enemigosJefeDerrotados++;
     }
 }
