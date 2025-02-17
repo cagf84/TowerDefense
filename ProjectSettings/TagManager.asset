@@ -6,13 +6,10 @@ TagManager:
   tags:
   - Objetivo
   - Camino
-  - Enemigo01
-  - Torre1
   - Suelo
   - Plataforma
-  - Enemigo02
-  - Enemigo03
   - Boss
+  - Enemigo
   layers:
   - Default
   - TransparentFX
@@ -23,7 +20,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Proyectil
   - 
   - 
   - 

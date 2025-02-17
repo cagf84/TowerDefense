@@ -646,7 +646,7 @@ namespace UnityEngine.InputSystem
                     ""path"": ""*/{Submit}"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
+                    ""groups"": """",
                     ""action"": ""Submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -657,7 +657,7 @@ namespace UnityEngine.InputSystem
                     ""path"": ""*/{Cancel}"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Gamepad;Touch;Joystick;XR"",
+                    ""groups"": """",
                     ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -798,12 +798,12 @@ namespace UnityEngine.InputSystem
         },
         {
             ""name"": ""Toques"",
-            ""id"": ""044b92bd-7a69-4fd6-a152-f5c45a5b18f4"",
+            ""id"": ""386e3c3f-2e90-496b-8bb5-10525aa7e8d3"",
             ""actions"": [
                 {
                     ""name"": ""Toque"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""131108de-d898-487a-b3d2-04863c91b760"",
+                    ""id"": ""ae5e141c-dc39-4052-878f-f2c20ca9ce03"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -812,7 +812,7 @@ namespace UnityEngine.InputSystem
                 {
                     ""name"": ""PosicionToque"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""405bd4f3-2872-4f29-bb84-5decb1b4f08b"",
+                    ""id"": ""ed42c673-1857-44e0-9fad-af5c685913df"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -822,7 +822,7 @@ namespace UnityEngine.InputSystem
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""f24791b4-0375-4e57-b7d1-1d7ea3dde7d2"",
+                    ""id"": ""c58c9a82-c609-4c33-a8d8-9e82383fd0cc"",
                     ""path"": ""<Touchscreen>/Press"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
@@ -833,7 +833,7 @@ namespace UnityEngine.InputSystem
                 },
                 {
                     ""name"": """",
-                    ""id"": ""90a0bcc5-5006-4e03-8cd0-30e7506a5fd0"",
+                    ""id"": ""a2e7ce85-636b-48c0-818b-f295a088b035"",
                     ""path"": ""<Touchscreen>/position"",
                     ""interactions"": ""Press"",
                     ""processors"": """",
